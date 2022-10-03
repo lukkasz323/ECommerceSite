@@ -1,7 +1,10 @@
 ﻿@page
 @model ECommerceSite.Pages.IndexModel
 @{
-    ViewData["Title"] = "Index";
+    string fileName = System.IO.Path.GetFileNameWithoutExtension(Path);
+
+    ViewData["Title"] = fileName;
+    ViewData["Style"] = fileName;
 }
 
 index

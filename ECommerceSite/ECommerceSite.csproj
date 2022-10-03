@@ -8,10 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\**" />
-    <Content Remove="wwwroot\**" />
-    <EmbeddedResource Remove="wwwroot\**" />
-    <None Remove="wwwroot\**" />
+    <None Remove="Pages\Index.cshtml.css" />
+    <None Remove="Pages\Shared\_Layout.cshtml.css" />
+    <None Remove="Pages\Shared\_Layout.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Index.cshtml.css">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

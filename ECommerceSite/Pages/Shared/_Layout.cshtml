@@ -1,18 +1,21 @@
-﻿<!DOCTYPE>
+﻿<!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="utf-8"/>
-        <title>@ViewData["Title"]</title>
-    </head>
-    <body>
-        <header>
-            header
-        </header>
-        <main>
-            @RenderBody()
-        </main>
-        <footer>
-            footer
-        </footer>
-    </body>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" asp-append-version="true" href="~/css/site.css" />
+    <link rel="stylesheet" asp-append-version="true" href="~/css/@(ViewData["Style"]).css" />
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
 </html>
